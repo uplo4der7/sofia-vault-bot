@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: sofia-msusd-bot
+    runtime: python
+    buildCommand: "./startup.sh"
+    startCommand: "python3 main.py"
+    autoDeploy: false
